@@ -3089,6 +3089,61 @@
     moment "^2.20.0"
     react-sortable-hoc "^2.0.0"
 
+"@contentful/field-editor-reference@^4.6.10":
+  version "4.6.10"
+  resolved "https://registry.yarnpkg.com/@contentful/field-editor-reference/-/field-editor-reference-4.6.10.tgz#91b122540f9281520539783975e400d078381784"
+  integrity sha512-m7+H/B0bpgAG0FbBXVScANzAxTQGR7oFi4gZ3ziSitENhkrHGosc8qRtF1tlAA4ehbXj5w6RUpUpb0TpUqDVDA==
+  dependencies:
+    "@contentful/f36-components" "^4.0.27"
+    "@contentful/f36-icons" "^4.1.0"
+    "@contentful/f36-tokens" "^4.0.0"
+    "@contentful/field-editor-shared" "^1.1.3"
+    "@contentful/mimetype" "^1.4.0"
+    "@types/deep-equal" "^1.0.1"
+    array-move "^3.0.0"
+    constate "3.2.0"
+    contentful-management "^10.0.0"
+    deep-equal "2.0.5"
+    emotion "^10.0.17"
+    lodash "^4.17.15"
+    lodash-es "^4.17.15"
+    moment "^2.20.0"
+    react-sortable-hoc "^2.0.0"
+
+"@contentful/field-editor-rich-text@^2.0.0-next.45":
+  version "2.3.20"
+  resolved "https://registry.yarnpkg.com/@contentful/field-editor-rich-text/-/field-editor-rich-text-2.3.20.tgz#647823df811530b5932617f76a8a9d06bbf7f9d8"
+  integrity sha512-T8cwsRVUQj6+Vu/PTRdLQmKyyEABWxwfTWL0z6keICDhvaYJ//+uht11neg5hpXvGptOObpzdcj9ESBC8UDvOw==
+  dependencies:
+    "@contentful/app-sdk" "^4.6.0"
+    "@contentful/contentful-slatejs-adapter" "^15.13.1"
+    "@contentful/f36-components" "^4.0.33"
+    "@contentful/f36-icons" "^4.1.1"
+    "@contentful/f36-tokens" "^4.0.0"
+    "@contentful/field-editor-reference" "^4.6.10"
+    "@contentful/field-editor-shared" "^1.1.3"
+    "@contentful/rich-text-plain-text-renderer" "^15.12.1"
+    "@contentful/rich-text-types" "^15.12.1"
+    "@popperjs/core" "^2.11.5"
+    "@udecode/plate-basic-marks" "^10.4.0"
+    "@udecode/plate-break" "^10.4.0"
+    "@udecode/plate-core" "^10.4.0"
+    "@udecode/plate-list" "^10.4.0"
+    "@udecode/plate-paragraph" "^10.4.0"
+    "@udecode/plate-reset-node" "^10.4.0"
+    "@udecode/plate-select" "^10.4.0"
+    "@udecode/plate-serializer-docx" "^10.4.0"
+    "@udecode/plate-table" "^10.4.0"
+    "@udecode/plate-trailing-block" "^10.4.0"
+    fast-deep-equal "^3.1.3"
+    is-hotkey "^0.2.0"
+    is-plain-obj "^3.0.0"
+    react-popper "^2.3.0"
+    slate "^0.80.0"
+    slate-history "^0.66.0"
+    slate-hyperscript "^0.67.0"
+    slate-react "^0.80.0"
+
 "@contentful/field-editor-shared@^0.19.0":
   version "0.19.0"
   resolved "https://registry.yarnpkg.com/@contentful/field-editor-shared/-/field-editor-shared-0.19.0.tgz#200f4714899a3622e5d7d3a912d8f1f8530e2204"
@@ -12348,7 +12403,7 @@ eventemitter3@^3.1.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
-eventemitter3@^4.0.0:
+eventemitter3@^4.0.0, eventemitter3@^4.0.7:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
@@ -19069,6 +19124,14 @@ p-queue@^4.0.0:
   dependencies:
     eventemitter3 "^3.1.0"
 
+p-queue@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-7.3.0.tgz#90dfa104894b286dc2f3638961380fb6dc262e55"
+  integrity sha512-5fP+yVQ0qp0rEfZoDTlP2c3RYBgxvRsw30qO+VtPPc95lyvSG+x6USSh1TuLB4n96IO6I8/oXQGsTgtna4q2nQ==
+  dependencies:
+    eventemitter3 "^4.0.7"
+    p-timeout "^5.0.2"
+
 p-reduce@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-reduce/-/p-reduce-1.0.0.tgz#18c2b0dd936a4690a529f8231f58a0fdb6a47dfa"
@@ -19105,6 +19168,11 @@ p-timeout@^3.0.0:
   integrity sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==
   dependencies:
     p-finally "^1.0.0"
+
+p-timeout@^5.0.2:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-5.1.0.tgz#b3c691cf4415138ce2d9cfe071dba11f0fee085b"
+  integrity sha512-auFDyzzzGZZZdHz3BtET9VEz0SE/uMEAx7uWfGPucfzEwwe/xH0iVeZibQmANYE/hp9T2+UUZT5m+BKyrDp3Ew==
 
 p-try@^1.0.0:
   version "1.0.0"
