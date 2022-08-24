@@ -13,7 +13,7 @@ import {
 } from '@tanstack/react-query';
 import constate from 'constate';
 import { createClient, PlainClientAPI } from 'contentful-management';
-import PQueue from 'p-queue/dist';
+import PQueue from 'p-queue';
 
 import {
   Asset,
